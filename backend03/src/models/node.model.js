@@ -6,5 +6,5 @@ const noteSchema = new mongoose.Schema({     // make schema
 })
 
 const noteModel = mongoose.model("note", noteSchema) // create model to perfrom CRUD operation
-
+                                                     // note is collection of data and its name is note , can be seen in database
 module.exports = noteModel
