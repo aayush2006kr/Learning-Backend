@@ -11,7 +11,7 @@ router.post("/register", authController.registerUser )
 //login user api
 router.post("/login" , authController.loginUser)
 
-
+router.post("/logout", authController.logoutUser)
 
 
 

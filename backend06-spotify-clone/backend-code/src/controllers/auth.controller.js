@@ -93,4 +93,14 @@ async function loginUser(req, res){
     })
 
     }
-module.exports = {registerUser , loginUser}
+
+
+async function logoutUser(req, res){
+    //token blacklisting unserstand , this is basic
+    res.clearCookie("token")
+
+    res.status(200).json({
+        message: "user logged out sucessfully"
+    })
+}
+module.exports = {registerUser , loginUser , logoutUser}
